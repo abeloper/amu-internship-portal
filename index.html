@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMU Internship & Industry Linkage Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/Arba_Minch_University.png" alt="">
+                </div>
+                <div class="logo-text">
+                    <h1>AMU Internship & Industry Linkage Portal</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#students">Students</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="btn btn-signup"><i class="fas fa-user-plus"></i> Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Connecting Arba Minch University Talent with Industry Opportunities</h2>
+                <p>Streamline your internship search, application, and approval process through our centralized digital platform.</p>
+                
+                <div class="role-buttons">
+                    <div class="role-btn" onclick="openLoginModal('student')">
+                        <div class="role-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Student Login/Sign Up</h3>
+                        <p>Find verified internships and track applications</p>
+                    </div>
+                    
+                    <div class="role-btn" onclick="openLoginModal('industry')">
+                        <div class="role-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Industry Partner Login/Sign Up</h3>
+                        <p>Post vacancies and hire talented students</p>
+                    </div>
+                    
+                    <div class="role-btn" onclick="openLoginModal('department')">
+                        <div class="role-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Department Staff Login</h3>
+                        <p>Track and approve student placements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="students">
+        <div class="container">
+            <div class="section-title">
+                <h2>Streamlined Internship Process</h2>
+                <p>Our platform provides a complete solution for internship management at AMU</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Find Verified Internships</h3>
+                    <p>Access a centralized database of verified internship opportunities from trusted industry partners.</p>
+                    <ul class="feature-list">
+                        <li>Browse by field, location, and duration</li>
+                        <li>Verified company profiles</li>
+                        <li>Application tracking system</li>
+                        <li>Direct communication with employers</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Post Vacancies & Hire</h3>
+                    <p>Industry partners can easily post internship vacancies and manage applicants through our platform.</p>
+                    <ul class="feature-list">
+                        <li>Easy internship posting</li>
+                        <li>Applicant management dashboard</li>
+                        <li>Student profile access</li>
+                        <li>Automated notifications</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Track & Approve Placements</h3>
+                    <p>Department coordinators can monitor and approve student internship placements in real-time.</p>
+                    <ul class="feature-list">
+                        <li>Real-time placement tracking</li>
+                        <li>Approval workflow management</li>
+                        <li>Performance monitoring</li>
+                        <li>Report generation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section class="internships" id="industries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Internship Openings</h2>
+                <p>Explore verified internship opportunities from our industry partners</p>
+            </div>
+            
+            <div class="internship-grid">
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-logo">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3>Ethio Telecom</h3>
+                        <p>Telecommunications Company</p>
+                    </div>
+                    <div class="internship-body">
+                        <ul class="internship-details">
+                            <li><span>Position:</span> <strong>Network Engineering Intern</strong></li>
+                            <li><span>Duration:</span> 3-6 months</li>
+                            <li><span>Location:</span> Addis Ababa</li>
+                            <li><span>Deadline:</span> June 15, 2024</li>
+                        </ul>
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Awash Bank</h3>
+                        <p>Banking & Financial Services</p>
+                    </div>
+                    <div class="internship-body">
+                        <ul class="internship-details">
+                            <li><span>Position:</span> <strong>Finance & Accounting Intern</strong></li>
+                            <li><span>Duration:</span> 4 months</li>
+                            <li><span>Location:</span> Arba Minch</li>
+                            <li><span>Deadline:</span> May 30, 2024</li>
+                        </ul>
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-logo">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>ArbaMinch MI</h3>
+                        <p>Manufacturing Industry</p>
+                    </div>
+                    <div class="internship-body">
+                        <ul class="internship-details">
+                            <li><span>Position:</span> <strong>Industrial Engineering Intern</strong></li>
+                            <li><span>Duration:</span> 6 months</li>
+                            <li><span>Location:</span> Arba Minch</li>
+                            <li><span>Deadline:</span> July 10, 2024</li>
+                        </ul>
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h4>AMU Internship Portal</h4>
+                            <p>Industry Linkage Platform</p>
+                        </div>
+                    </div>
+                    <p>A centralized digital system connecting Arba Minch University students with verified industry partners through structured workflows and transparent processes.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#students">Students Portal</a></li>
+                        <li><a href="#industries">Industry Partners</a></li>
+                        <li><a href="#departments">Department Portal</a></li>
+                        <li><a href="#about">About the System</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">How to Apply</a></li>
+                        <li><a href="#">Company Registration</a></li>
+                        <li><a href="#">Internship Guidelines</a></li>
+                        <li><a href="#">Student Handbook</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-university"></i> Arba Minch University</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Arba Minch, Ethiopia</li>
+                        <li><i class="fas fa-phone"></i> +251 XX XXX XXXX</li>
+                        <li><i class="fas fa-envelope"></i> internship@amu.edu.et</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="https://www.ambou.edu.et/" target="_blank">University Website</a>
+                </div>
+                <p>&copy; 2024 Arba Minch University. All rights reserved.</p>
+                <p>AMU Internship & Industry Linkage Portal - Version 2.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Login/Signup -->
+    <div id="loginModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 2000; justify-content: center; align-items: center;">
+        <div style="background-color: white; border-radius: 12px; width: 90%; max-width: 500px; padding: 40px; position: relative;">
+            <button onclick="closeLoginModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--amu-gray);">&times;</button>
+            <h2 id="modalTitle" style="color: var(--amu-blue); margin-bottom: 20px;"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
